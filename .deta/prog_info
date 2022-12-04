@@ -1,0 +1,1 @@
+{"id":"bde8228b-7450-46cd-b675-fd9a9388ef87","space":12163,"runtime":"python3.9","name":"my-micro","path":"78s54m","project":"c0pnnvyx","account":"144798365827","region":"ap-southeast-1","deps":["fastapi","Jinja2","python-multipart"],"envs":null,"public":true,"log_level":"off","cron":""}

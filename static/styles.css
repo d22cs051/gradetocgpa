@@ -1,0 +1,68 @@
+h1 {
+    color: #333;
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+    width: 75%;
+    border-collapse: collapse; 
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+    background: #eee; 
+  }
+  th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+  }
+  td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+  }
+
+/*
+end table
+*/
+
+/* submit button */
+.form-submit-button {
+    padding: 0.65%;
+	background: #333;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+.form-submit-button:hover {
+	background: #000;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+/* glowing text */
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #9c9c9c, 0 0 20px #797979, 0 0 30px #5c5c5c, 0 0 40px #585858, 0 0 50px #353535, 0 0 60px #2c2c2c, 0 0 70px #1e1e1e;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #1e1e1e, 0 0 30px #2c2c2c, 0 0 40px #353535, 0 0 50px #585858, 0 0 60px #5c5c5c, 0 0 70px #797979, 0 0 80px #9c9c9c;
+    }
+  }
+  

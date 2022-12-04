@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1> Welcome to Grade to CGPA convert IITJ-PG</h1>
+    <form method="post" action="/">
+        
+        <table>
+            <tr>
+                <th>Semester</th>
+                <th>Branch</th>
+            </tr>
+            <tr>
+                <td>
+                <select name="sem" id="sem">
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                </select>
+                </td>
+                <td>
+                <select name="branch" id="branch">
+                    <option value="AI">AI</option>
+                    <option value="CS">CS</option>
+                    <option value="DCS">DCS</option>
+                </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input class="form-submit-button" type="submit" value="Next">
+        
+      </form>
+    </center>  
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <title>Grades</title>
+</head>
+<body>
+    <center>
+    <h1>Select Grades and Credits</h1>
+    <!-- <h1>{{ sub_list }}</h1> -->
+    <form method="post" action="/calculate">
+        {% if sem == 1 %}
+                <table border="1">
+                    <tr>
+                    <th>subject</th>
+                    <th>grade</th>   
+                    <th>credit</th> 
+                    </tr>
+                    {% for i in range(sub_list|length) %}
+                    <tr>
+                    <td>
+                    <label>{{ sub_list[i] }}</label>
+                    </td>
+                    <td>
+                    <select name={{ sub_list[i] }} id={{ sub_list[i] }}>
+                        <option value="A*">A*</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                    </select>
+                    </td>
+                    <td>
+                    <select name={{ sub_list[i]+'_credit' }} id={{ sub_list[i]+'_credit' }}>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                    </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <br>
+            {% endif %}
+            <input class="form-submit-button" type="submit" value="Submit">
+    </form>
+    </center>
+</body>
+</html>
